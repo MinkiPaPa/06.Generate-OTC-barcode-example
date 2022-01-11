@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ImageBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_weight="1">
+
+        <!--        <Button-->
+        <!--            android:id="@+id/BtnSession"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:text="Make Session"/>-->
+
+        <Button
+            android:id="@+id/BtnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="262dp"
+            android:text="거래내역조회" />
+
+        <Button
+            android:id="@+id/BtnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="73dp"
+            android:text="Generate" />
+
+        <Button
+            android:id="@+id/BtnCharse"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@+id/BtnGenerate"
+            android:layout_marginTop="48dp"
+            android:text="충전" />
+
+        <Button
+            android:id="@+id/BtnSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="87dp"
+            android:text="환경설정" />
+
+        <TextView
+            android:id="@+id/textApprono"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="228dp"
+            android:text="없음" />
+
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_width="197dp"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="217dp"
+            android:ems="10"
+            android:gravity="end"
+            android:hint="금액을 입력해 주세요"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+</LinearLayout>
